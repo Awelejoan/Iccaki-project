@@ -23,6 +23,21 @@ body{
     margin: 0;
     padding: 0;
 }
+.service-text{
+    color: white;
+    font-family: 'abelregular';
+    line-height: 25px;
+}
+/* .service .container{
+   scroll-snap-align: start;
+
+}
+.service{
+    scroll-snap-type: Y mandatory;
+    scroll-snap-type: X mandatory;
+    height: 100vh;
+
+} */
 
 .header {
     display: flex;
@@ -63,6 +78,13 @@ a {
     color: black;
     font-size: 20px;
 }
+a:hover{
+    color: burlywood;
+    font-weight: bold;
+}
+.fa-navicon{
+    display: none;
+}
 
 .hero-content {
     padding: 250px 150px;
@@ -99,6 +121,14 @@ a {
 
 .pic1 {
     background: url("../img/gallery/offers1.jpg")no-repeat center/cover;
+    height: 300px;
+}
+.pic2 {
+    background: url("../img/gallery/h1_hero1.png")no-repeat center/cover;
+    height: 300px;
+}
+.pic3 {
+    background: url("../img/gallery/offers1.png")no-repeat center/cover;
     height: 300px;
 }
 
@@ -211,6 +241,9 @@ footer h3 {
     color: burlywood;
     padding: 10px;
 }
+.icons a i{
+    color: burlywood;
+}
 
 .service-img {
     height: 400px;
@@ -218,7 +251,7 @@ footer h3 {
 
 .gallery-btn {
     margin-left: 45%;
-    background-color: burlywood;
+    background-color:burlywood;
 }
 
 .img1 {
@@ -245,4 +278,153 @@ footer h3 {
     border: none;
     border-radius: 3px;
     
+}
+.work1{background: url('../img/works/dress2.jpg')no-repeat center/cover; height: 400px;}
+.work2{background: url('../img/works/jumpsuit2.jpeg')no-repeat center/cover;height: 400px;}
+.work3{background: url('../img/works/lace3.jpeg')no-repeat center/cover; height: 400px}
+.work10{background: url('../img/works/dinner2.jpeg')no-repeat; height: 400px}
+.work4{background: url('../img/works/ankara3.jpeg')no-repeat center/cover; height: 400px}
+.work6{background: url('../img/works/jumpsuit1.jpeg')no-repeat center/cover; height: 400px}
+.work7{background: url('../img/works/lace1.jpeg')no-repeat center/cover; height: 400px}
+.work8{background: url('../img/works/ankara1.jpeg')no-repeat center/cover; height: 400px}
+.work9{background: url('../img/works/baloon1.jpg')no-repeat center/cover; height: 400px}
+.work11{background: url('../img/works/baloon2.jpg')no-repeat center/cover; height: 400px}
+.work12{background: url('../img/works/dinner3.jpg')no-repeat center/cover; height: 400px}
+.work5{background: url('../img/works/dress3\ \(2\).jpg')no-repeat center/cover; height: 400px}
+
+.map{
+    height:535px;
+    width: 550px;
+}
+#textarea{
+    height: 140px;
+}
+.form-control{
+    background-color: transparent;
+}
+.form{
+    background-color:white;
+    padding: 20px 15px;
+
+}
+.contactbtn{
+    text-align: center;
+}
+.details{
+    line-height: 40px;
+}
+.about-img {
+    background: url('../img/gallery/h1_hero1.png')no-repeat center/cover;
+    height: 455px;
+}
+.abt-btn{
+    background-color: bisque;
+    border: none;
+
+}
+.naviconbtn{display: none;}
+.menu-item .active{
+    width: 32%;
+    padding: 2px;
+    
+}
+.menu-item .delete{
+    width: 0%;
+    height: 0%;
+}
+.detail-title{
+    color: burlywood;
+    font-family: 'arialregular';
+}
+.to-top{
+    color: white;
+    font-size: 25px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: burlywood;
+    border-radius: 20px;
+    opacity:0;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+.to-top.active{
+    opacity:1 ;
+    bottom: 15px;
+    pointer-events: auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+#preloader{
+    background: black url('../img/icon/preloader5.gif')no-repeat center center;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.pre-effect{
+    display: none;
+}
+@media only screen and (max-width:600px) {
+    .hero{
+        height: 450px;
+    }
+    .hero-content {
+        padding: 200px 50px;
+        color: white;
+        }
+    .to-top{
+        font-size: 30px;
+    }
+    .gallery-text{
+        padding-top: 100px;
+    }
+    .img{
+        left: 0px;
+    }
+    .map{
+        width: 470px;
+    }
+    .hero-text{
+        font-family:  'pinyon_scriptregular';
+    }
+    .about{
+        padding: 20px;
+    }
+   
+}
+@media only screen and (max-width:900px) {
+    .fa-navicon{display: block;}
+    .nav-btn{display: none;}
+   .nav-bar .active{
+        height: 250px;
+    }
+    .nav-bar{
+        display: block;
+        position: absolute;
+        top: 80px;
+        height: 0px;
+        overflow: hidden;
+        background-color: white;
+        opacity: 0.8;
+        width: 100%;
+    }
+    nav ul{
+        display: block;
+        line-height: 40px;
+    }
+    .container-fluid{
+        padding: 0px 40px;
+    }
+    .naviconbtn{
+        border: none;
+        display: block;
+        border-radius: 5px;
+        padding: 2px 5px;
+    }
+    .fa-navicon{
+        font-size: 30px;
+    }
 }

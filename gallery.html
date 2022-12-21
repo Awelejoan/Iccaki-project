@@ -14,25 +14,129 @@
 </head>
 
 <body>
+    <header>
+        <div class="header container-fluid">
+            <h3>Iccaki<span class="hero-span">House</span></h3>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <button><i class="fa fa-navicon"></i></button>
+            <button class="nav-btn p-4"><a href="contact.html"> Visit Us</a></button>
+        </div>
+
+    </header>
     <div class="hero gallery-hero">
         <div class="hero-content">
             <h1 class="gallery-text text-white">Our Gallery</h1>
         </div>
     </div>
-<div class="button-section mt-5 text-center">
-    <span>
-        <button class="btn-control">All</button>
-        <button class="btn-control">Gown</button>
-        <button class="btn-control">Ankara</button>
-        <button class="btn-control">Jumpsuit</button>
-        <button class="btn-control">lace</button>
-    </span>
-</div>
-   
-    
+    <div class="button-section mt-5 text-center">
+        <span class="buttons">
+            <button data-target="all" class="btn-control">All</button>
+            <button data-target="gown" class="btn-control">Gown</button>
+            <button data-target="ankara" class="btn-control">Ankara</button>
+            <button data-target="jumpsuit" class="btn-control">Jumpsuit</button>
+            <button data-target="lace" class="btn-control">lace</button>
+            <button data-target="baloon" class="btn-control">Baloon</button>
+        </span>
+        <div class="container">
+            <div class="row mt-3 menu-item ">
+                    <div data-item="lace" class="work1 col-md-4 col-sm-6 col-xs-12 "></div>
+                    <div data-item="jumpsuit" class="work2 col-md-4 col-sm-6 col-xs-12 "></div>
+                    <div data-item="lace" class="work3 col-md-4 col-sm-6 col-xs-12"></div>
+                    <div data-item="ankara" class="work4 col-md-4 col-sm-6 col-xs-12 "></div>
+                   <div data-item="gown" class="work5 col-md-4 col-sm-6 col-xs-12 "></div>
+                    <div data-item="jumpsuit" class="work6 col-md-4 col-sm-6 col-xs-12 "></div>
+                    <div data-item="lace" class="work7 col-md-4 col-sm-6 col-xs-12 "></div>
+                    <div data-item="ankara" class="work8 col-md-4 col-sm-6 col-xs-12 "></div>
+                    <div data-item="baloon" class="work9 col-md-4 col-sm-6 col-xs-12"></div>
+                    <div data-item="gown" class="work10 col-md-4 col-sm-6 col-xs-12 "></div>
+                    <div data-item="baloon" class="work11 col-md-4 col-sm-6 col-xs-12 "></div>
+                    <div data-item="lace" class="work12 col-md-4 col-sm-6 col-xs-12"></div>
+
+            </div>
+        </div>
+    </div>
+    <a href="#" class="to-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+    <script src="app.js"></script>
+    <footer>
+        <div class="footer-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <h3>Iccaki World</h3>
+                        <p>A fashion house with a difference <br>
+                            Where clients dress to impress</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <h3>Contact</h3>
+                        <p>11 Kadiku close, igbo-oluwo <br> estate Ikorodu</p>
+                        <p><strong>tel:</strong>08139328392</p>
+
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <h3>Links</h3>
+                        <div class="link">
+                            <a href="#">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="service.html">Services</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="gallery.html">Gallery</a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <h3>Social</h3>
+                        <div class="d-flex icons">
+                            <a href="https://www.instagram.com/house_of_iccakii/?igshid=YmMyMTA2M2Y%3D"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100070427521942"><i class="fa fa-facebook ml-2"></i></a>
+                           <a href="https://wa.me/23408139328392"> <i class="fa fa-whatsapp ml-2"></i></a>
+
+                        </div>
+                    </div>
+                </div </div>
+
+            </div>
+
+    </footer>
+
+    <script>
+
+        let sortBtn = document.querySelector('.buttons').children
+        let sortItem = document.querySelector('.menu-item').children
+        for (let i = 0; i < sortBtn.length; i++) {
+            sortBtn[i].addEventListener('click', function () {
+                for (let j = 0; j <sortBtn.length; j++) {
+                   sortBtn[j].classList.remove('current')     
+                }
+                this.classList.add('current')
+                let targetData = this.getAttribute('data-target');
+                for (let k = 0; k < sortItem.length; k++) {
+            
+                    sortItem[k].classList.remove('active')
+                    sortItem[k].classList.add('delete');
+                    
+                    if (sortItem[k].getAttribute('data-item') ==targetData ||targetData=='all') {
+                        sortItem[k].classList.add('active')
+                        sortItem[k].classList.remove('delete');   
+                    }
+                    
+                }
+            })
+
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
