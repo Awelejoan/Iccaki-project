@@ -12,25 +12,43 @@
     <link rel="stylesheet" href="css/custum.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
-
+<style>
+    body{
+        background-color: black;
+    }
+</style>
 <body>
-    <header>
-        <div class="header container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
             <h3>Iccaki<span class="hero-span">House</span></h3>
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="gallery.html">Gallery</a>
+                    </li>
                 </ul>
-            </nav>
-            <button><i class="fa fa-navicon"></i></button>
-            <button class="nav-btn p-4"><a href="contact.html"> Visit Us</a></button>
-        </div>
+                <button class="nav-btn p-4"><a href="contact.html"> Visit Us</a></button>
 
-    </header>
+            </div>
+        </div>
+    </nav>
     <div class="hero gallery-hero">
         <div class="hero-content">
             <h1 class="gallery-text text-white">Our Gallery</h1>
@@ -46,19 +64,19 @@
             <button data-target="baloon" class="btn-control">Baloon</button>
         </span>
         <div class="container">
-            <div class="row mt-3 menu-item ">
-                    <div data-item="lace" class="work1 col-md-4 col-sm-6 col-xs-12 "></div>
-                    <div data-item="jumpsuit" class="work2 col-md-4 col-sm-6 col-xs-12 "></div>
-                    <div data-item="lace" class="work3 col-md-4 col-sm-6 col-xs-12"></div>
-                    <div data-item="ankara" class="work4 col-md-4 col-sm-6 col-xs-12 "></div>
-                   <div data-item="gown" class="work5 col-md-4 col-sm-6 col-xs-12 "></div>
-                    <div data-item="jumpsuit" class="work6 col-md-4 col-sm-6 col-xs-12 "></div>
-                    <div data-item="lace" class="work7 col-md-4 col-sm-6 col-xs-12 "></div>
-                    <div data-item="ankara" class="work8 col-md-4 col-sm-6 col-xs-12 "></div>
-                    <div data-item="baloon" class="work9 col-md-4 col-sm-6 col-xs-12"></div>
-                    <div data-item="gown" class="work10 col-md-4 col-sm-6 col-xs-12 "></div>
-                    <div data-item="baloon" class="work11 col-md-4 col-sm-6 col-xs-12 "></div>
-                    <div data-item="lace" class="work12 col-md-4 col-sm-6 col-xs-12"></div>
+            <div class="mt-3 menu-item ">
+                    <div data-item="lace" class="item-box work1"></div>
+                    <div data-item="jumpsuit" class=" item-box work2"></div>
+                    <div data-item="lace" class="item-box work3"></div>
+                    <div data-item="ankara" class="item-box work4 "></div>
+                   <div data-item="gown" class="item-box work5"></div>
+                    <div data-item="jumpsuit" class="item-box work6"></div>
+                    <div data-item="lace" class="item-box work7"></div>
+                    <div data-item="ankara" class="item-box work8"></div>
+                    <div data-item="baloon" class="item-box work9"></div>
+                    <div data-item="gown" class="item-box work10"></div>
+                    <div data-item="baloon" class="item-box work11"></div>
+                    <div data-item="all" class="item-box work12"></div>
 
             </div>
         </div>

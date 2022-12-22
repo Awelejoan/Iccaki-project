@@ -65,21 +65,19 @@ h3 {
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
+    margin-left: 250px;
+    /* display: flex;
+    list-style-type: none; */
 }
 
 nav a {
-    margin: 15px;
-}
-
-a {
+    margin: 5px;
     text-decoration: none;
-    color: black;
+    color: black !important;
     font-size: 20px;
 }
-a:hover{
-    color: burlywood;
+nav a:hover{
+    color: burlywood !important;
     font-weight: bold;
 }
 .fa-navicon{
@@ -219,6 +217,9 @@ footer h3 {
 }
 
 .link a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px;
     display: block;
     color: white;
     font-size: 17px;
@@ -253,20 +254,38 @@ footer h3 {
     margin-left: 45%;
     background-color:burlywood;
 }
+.buttons{
+    border: none;
+}
 
 .img1 {
     background: url('../img/works/ankara1.jpeg')no-repeat;
     background-size: cover;
+    transform: scale(1);
+    transition: 0.7s ease-in-out;
 
+}
+.img1:hover{
+    transform: scale(1.1);
 }
 
 .img2 {
     background: url('../img/works/baloon1.jpg')no-repeat center/cover;
+    transform: scale(1);
+    transition: 0.7s ease-in-out;
+}
+.img2:hover{
+    transform: scale(1.1);
 }
 
 .img3 {
     background: url('../img/works/dinner1.jpeg')no-repeat;
     background-size: cover;
+    transform: scale(1);
+    transition: 0.7s ease-in-out;
+}
+.img3:hover{
+    transform: scale(1.1);
 }
 /* gallery section */
 .gallery-hero{
@@ -292,6 +311,40 @@ footer h3 {
 .work12{background: url('../img/works/dinner3.jpg')no-repeat center/cover; height: 400px}
 .work5{background: url('../img/works/dress3\ \(2\).jpg')no-repeat center/cover; height: 400px}
 
+.button-section{
+    padding: 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+.menu-item .item-box{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin: 2px;
+    display: block;
+}
+.menu-item .item-box .work1,.work2,
+.work3,.work4,.work5,.work6,.work7,.work8,
+.work9,.work10,.work11,.work12{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+/* .container .work1{
+    max-width: 100%;    
+} */
+.menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .map{
     height:535px;
     width: 550px;
@@ -324,7 +377,7 @@ footer h3 {
 }
 .naviconbtn{display: none;}
 .menu-item .active{
-    width: 32%;
+
     padding: 2px;
     
 }
@@ -337,7 +390,7 @@ footer h3 {
     font-family: 'arialregular';
 }
 .to-top{
-    color: white;
+    color: white !important;
     font-size: 25px;
     position: fixed;
     bottom: 15px;
@@ -413,12 +466,13 @@ html{
     }
     nav ul{
         display: block;
-        line-height: 40px;
+        line-height: 10px;
     }
     .container-fluid{
         padding: 0px 40px;
     }
     .naviconbtn{
+        background-color: rgb(195, 183, 166);
         border: none;
         display: block;
         border-radius: 5px;
