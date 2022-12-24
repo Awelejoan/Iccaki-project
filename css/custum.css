@@ -420,12 +420,15 @@ html{
 .pre-effect{
     display: none;
 }
+.contactbtn{
+    background-color: rgb(246, 213, 170);
+}
 @media only screen and (max-width:600px) {
     .hero{
-        height: 450px;
+        height: 400px;
     }
     .hero-content {
-        padding: 200px 50px;
+        padding: 150px 50px;
         color: white;
         }
     .to-top{
@@ -446,6 +449,24 @@ html{
     .about{
         padding: 20px;
     }
+    .buttons{
+        margin-top: 5px;
+    }
+    nav ul{
+        margin-left: 50px;
+        width: 100%;
+    }
+   .service-img{
+    margin-top: 5px;
+   } 
+    
+    .gallery {
+        margin-top: 10px;
+    }
+    .to-top{
+        right: 5px;
+    }
+    
    
 }
 @media only screen and (max-width:900px) {
@@ -478,7 +499,7 @@ html{
         border-radius: 5px;
         padding: 2px 5px;
     }
-    .fa-navicon{
+    /* .fa-navicon{
         font-size: 30px;
-    }
+    } */
 }
