@@ -7,10 +7,7 @@ window.addEventListener('scroll', () => {
         toTop.classList.remove('active')
     }
 })
-const loader = document.getElementById('preloader')
-window.addEventListener('load', function () {
-    loader.style.display = 'none'
-})
+
 
 const name = document.getElementById('name');
 const email = document.getElementById('email');
