@@ -308,7 +308,7 @@ footer h3 {
 .work7{background: url('../img/works/lace1.jpeg')no-repeat center/cover; height: 400px}
 .work8{background: url('../img/works/ankara1.jpeg')no-repeat center/cover; height: 400px}
 .work9{background: url('../img/works/baloon1.jpg')no-repeat center/cover; height: 400px}
-.work11{background: url('../img/works/baloon2.jpg')no-repeat center/cover; height: 400px}
+.work11{background: url(../img/works/Baloon2.jpg)no-repeat center/cover; height: 400px}
 .work12{background: url('../img/works/dinner3.jpg')no-repeat center/cover; height: 400px}
 .work5{background: url('../img/works/dress3\ \(2\).jpg')no-repeat center/cover; height: 400px}
 
@@ -489,7 +489,5 @@ html{
         border-radius: 5px;
         padding: 2px 5px;
     }
-    /* .fa-navicon{
-        font-size: 30px;
-    } */
+   
 }
