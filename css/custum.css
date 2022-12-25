@@ -457,6 +457,9 @@ html{
     .comment{
         font-size: 15px;
     }
+    .history{
+        padding-top: 80px;
+    }
    
 }
 @media only screen and (max-width:900px) {
