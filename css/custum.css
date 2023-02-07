@@ -250,6 +250,9 @@ footer h3 {
 .service-img {
     height: 400px;
 }
+.img-container{
+    overflow: hidden;
+}
 
 .gallery-btn {
     margin-left: 45%;
